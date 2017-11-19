@@ -1,0 +1,26 @@
+<html ng-app="app">
+<head>
+  <title>Hello World in AngularJS</title>
+  <script src="/angular/angular.min.js"></script>
+      <link rel="stylesheet" href="/boistrap/css/bootstrap.min.css"></style>
+   <script src='boi/angularController.js'></script>
+  
+</head>
+<body ng-controller="angularController">
+
+<ul>
+  <li ng-repeat="todo in todos">
+    <input type="checkbox" ng-model="todo.completed">
+    {{ todo.name }}
+  </li>
+</ul>
+{{boi}}
+{{gal}}
+<form method="get" action="/triggered">
+<button type="submit"> Go to Magic</button>
+
+</form>
+  
+
+</body>
+</html>

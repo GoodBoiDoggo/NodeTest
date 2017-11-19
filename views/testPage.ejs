@@ -1,0 +1,19 @@
+<html ng-app="app">
+<head>
+  <title>Hello World in AngularJS</title>
+  <script src="/angular/angular.min.js"></script>
+      <link rel="stylesheet" href="/boistrap/css/bootstrap.min.css"></style>
+   <script src='boi/angularController.js'></script>
+  
+</head>
+
+<body ng-controller="angularController">
+
+<h1>Hi bois</h1>
+<input class="form-control" type="text" ng-model="vm.num1"><br>
+<input class="form-control" type="text" ng-model="vm.num2"><br>
+<button class="btn btn-success" ng-click="longlib(vm.num1,vm.num2)">ADD</button>
+Sum: {{sum}} <br>
+Concatenation: {{vm.num1 + vm.num2}}
+
+</body>
